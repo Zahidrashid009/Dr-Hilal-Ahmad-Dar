@@ -51,16 +51,12 @@ setInterval(showTestimonials,4000);
 
 /* ================= APPOINTMENT FORM ================= */
 
-const form = document.getElementById("appointmentForm");
+const form = document.querySelector("form");
 
-form.addEventListener("submit",function(e){
-
-e.preventDefault();
-
+if(form){
+form.addEventListener("submit", function(){
 alert("Appointment request submitted successfully!");
-
-form.reset();
-
 });
+}
 
-document.addEventListener("DOMContentLoaded", function(){ const toggle = document.getElementById("menu-toggle"); const nav = document.getElementById("nav-menu"); toggle.addEventListener("click", function(){ nav.classList.toggle("active"); }); });
+document.addEventListener("DOMContentLoaded", function(){ const toggle = document.getElementById("menu-toggle"); const nav = document.getElementById("nav-menu"); if(toggle && nav){ toggle.addEventListener("click", function(){ nav.classList.toggle("active"); }); } });
