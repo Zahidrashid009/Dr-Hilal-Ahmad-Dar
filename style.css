@@ -376,4 +376,36 @@ section{
     padding:40px 20px;
 }
 
-grid-template-columns: repeat
+/* =================HAMBURGER MENU=================*/
+
+/* Hide toggle on desktop */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width:768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide menu initially */
+    #nav-menu {
+        display: none;
+        width: 100%;
+    }
+
+    /* Show menu when active */
+    #nav-menu.active {
+        display: block;
+    }
+
+    /* Stack menu items */
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+}
