@@ -1,0 +1,335 @@
+
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+background:#0b6fa4;
+color:white;
+
+position:sticky;
+top:0;
+
+z-index:1000;
+
+}
+
+.navbar ul{
+
+display:flex;
+gap:20px;
+list-style:none;
+
+}
+
+.navbar a{
+
+color:white;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+/* ================= HERO SLIDER ================= */
+
+.hero{
+
+position:relative;
+height:80vh;
+overflow:hidden;
+
+}
+
+
+.slide{
+
+position:absolute;
+width:100%;
+height:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+
+background-size:cover;
+background-position:center;
+
+opacity:0;
+
+transition:opacity 4s ease;
+
+}
+
+
+.slide.active{
+opacity:1;
+}
+
+
+
+/* TEXT BOX */
+
+.slide-content{
+
+background:rgba(0,0,0,0.5);
+
+padding:25px;
+
+border-radius:10px;
+
+}
+
+
+
+/* SLIDE BACKGROUNDS */
+
+.slide1{
+
+background-image:url("https://images.unsplash.com/photo-1579684385127-1ef15d508118");
+
+}
+
+.slide2{
+
+background-image:url("img\ slide\ 2.jpg");
+
+}
+
+.slide3{
+
+background-image:url("img\ 3\ slide.jpg");
+
+}
+
+
+
+/* ================= ABOUT ================= */
+
+#about{
+
+padding:60px;
+text-align:center;
+
+}
+
+.about-container{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+gap:40px;
+
+margin-top:30px;
+
+}
+
+.doctor-img img{
+
+width:260px;
+border-radius:12px;
+
+}
+
+.doctor-info{
+
+max-width:400px;
+text-align:left;
+
+}
+
+
+
+/* ================= SERVICES ================= */
+
+#services {
+    background: #f4f9fc;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+#services h2 {
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARD DESIGN */
+.service-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/* IMAGE */
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.service-card h3 {
+    margin: 15px 0 5px;
+}
+
+.service-card p {
+    padding: 0 15px 20px;
+    color: #555;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* ================= TESTIMONIALS ================= */
+
+#testimonials{
+
+padding:60px;
+text-align:center;
+
+}
+
+.testimonial{
+
+display:none;
+
+max-width:600px;
+
+margin:auto;
+
+font-style:italic;
+
+}
+
+.testimonial.active{
+
+display:block;
+
+}
+
+
+
+/* ================= APPOINTMENT ================= */
+
+#appointment{
+
+padding:60px;
+text-align:center;
+
+background:#eef6fb;
+
+}
+
+form{
+
+display:flex;
+flex-direction:column;
+
+max-width:400px;
+
+margin:auto;
+
+gap:10px;
+
+}
+
+input,textarea{
+
+padding:10px;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+}
+
+button{
+
+background:#0b6fa4;
+
+color:white;
+
+padding:12px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+
+
+/* ================= CONTACT ================= */
+
+#contact{
+
+padding:60px;
+
+text-align:center;
+
+}
+
+.map iframe{
+
+width:100%;
+
+height:300px;
+
+border:0;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+background:#0b6fa4;
+
+color:white;
+
+padding:20px;
+
+text-align:center;
+
+}
