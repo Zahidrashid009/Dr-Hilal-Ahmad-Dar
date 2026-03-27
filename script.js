@@ -20,7 +20,7 @@ slides[index-1].classList.add("active");
 
 }
 
-setInterval(showSlides,3000);
+setInterval(showSlides,4000);
 
 
 
