@@ -27,6 +27,7 @@ position:sticky;
 top:0;
 
 z-index:1000;
+width: 100%;
 
 }
 
@@ -55,6 +56,7 @@ font-weight:bold;
 position:relative;
 height:80vh;
 overflow:hidden;
+width: 100%;
 
 }
 
@@ -343,6 +345,7 @@ text-align:center;
 .navbar{
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 15px;
 }
 .navbar ul{
     flex-direction: column;
@@ -408,4 +411,8 @@ section{
         gap: 15px;
         margin-top: 10px;
     }
+}
+
+body {
+    overflow-x: hidden;
 }
