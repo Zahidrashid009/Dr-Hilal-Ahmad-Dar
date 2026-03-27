@@ -60,3 +60,11 @@ alert("Appointment request submitted successfully!");
 }
 
 document.addEventListener("DOMContentLoaded", function(){ const toggle = document.getElementById("menu-toggle"); const nav = document.getElementById("nav-menu"); if(toggle && nav){ toggle.addEventListener("click", function(){ nav.classList.toggle("active"); }); } });
+
+(function(){emailjs.init("DM483BGqh6rqYhIsr")})();
+const Form = document.getElementById("appointmentForm"); form.addEventListener("submit", function(e){e.preventDefault();
+emailjs.sendForm("service_q2hm48w","template_m2xyqmf",)
+.then(function(){ alert("Appointment sent successfully!"); form.reset(); }, function(error){ alert("Failed to send. Try again.");
+
+}); 
+});

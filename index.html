@@ -13,6 +13,9 @@
 
 </head>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
 <body>
 
 
@@ -224,19 +227,14 @@ endoscopy and GERD treatment.
 
 <!-- ================= APPOINTMENT ================= -->
 
-<form name="appointment" method="POST" data-netlify="true"> <!-- Required hidden input --> 
-    <input type="hidden"
-        name="form-name" value="appointment"> 
-        <input type="text" name="name" placeholder="Patient Name" required> 
-        <input type="email" name="email" placeholder="Email Address" required> <input type="tel" name="phone"
-        placeholder="Phone Number" required> 
-        <input type="date" name="date" required> 
-        <textarea name="message"
-        placeholder="Describe your problem">
-    </textarea>
-         <button type="submit">Submit Appointment</button> 
-    
-    </form>
+<form id="appointmentForm"> <input type="text" name="name" placeholder="Patient Name" required> 
+    <input type="email"
+        name="email" placeholder="Email Address" required>
+         <input type="tel" name="phone" placeholder="Phone Number"
+        required> <input type="date" name="date" required>
+         <textarea name="message" placeholder="Describe your problem"></textarea> 
+        <button type="submit">Submit Appointment</button>
+     </form>
 
 
 
